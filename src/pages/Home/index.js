@@ -13,10 +13,9 @@ import dinner from "../../assets/dinner.svg";
 const Home = () => {
   return (
     <Fragment>
-    
-    <TopMenu />
-
-    <main>
+      
+      <TopMenu />
+      
       <div class="container">
 
         <div class="main-center">
@@ -55,8 +54,7 @@ const Home = () => {
         </footer>
 
       </div>
-    </main>
-  </Fragment>
+    </Fragment>
   )
 }
 

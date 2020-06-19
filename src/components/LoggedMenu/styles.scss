@@ -1,32 +1,28 @@
 @import '../../utils/variables';
 
 .inverse-menu{
-  padding: 32px;
+  width: 100%;
+  padding: 22px 0;
+  line-height: 24px;
+  font-size: 32px;
+  font-family: 'Open Sans Condensed', sans-serif;
   background-color: $--primary;
-  
-  .container {
+    
+  &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1300px;
-    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   &-logo {
     display: flex;
     align-items: flex-end;
+    margin-right: 60px;
 
     &-image {
-      width: 30px;
-    }
-
-    &-label {
-      display: block;
-      margin-left: 8px;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 300;
-      font-size: 22px;
-      color: $--white-2; 
+      width: 42px;
     }
   }
 
@@ -35,19 +31,16 @@
     justify-content: space-between;
     width: 45%;
     color: $--white-2;
-
-    .menu-link {
-      margin-right: 8px;
-    }
   }
 
   &-user {
+    width: 300px;
+    margin-left: auto;
+    text-align: right;
     color: $--white-2;
-    font-weight: 600;
-    font-size: 20px;
 
-    .inverse-menu-link:last-child {
-      margin-left: 16px;
+    strong {
+      margin-left: 8px;
     }
   }
 }
@@ -59,7 +52,7 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -4px;
     width: 0;
     height: 2px;
     transition: all 0.2s ease-in-out;

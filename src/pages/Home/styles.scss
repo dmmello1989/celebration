@@ -50,13 +50,16 @@ a {
   background-color: $--primary;
   border: 1px solid $--primary;
   border-radius: 6px;
+  transition: all 420ms;
   cursor: pointer;
+
+  &:hover {
+    color: $--primary;
+    background-color: $--white-1;
+    transition: all 420ms;
+  }
 }
 
-// Header
-
-
-// Main 
 // Main Center
 .main-center {
   display: flex;
