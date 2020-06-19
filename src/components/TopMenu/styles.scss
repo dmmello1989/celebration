@@ -1,0 +1,82 @@
+@import '../../utils/variables';
+
+.menu{
+  padding: 32px;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    padding: 0;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: flex-end;
+
+    &-image {
+      width: 30px;
+    }
+
+    &-label {
+      display: block;
+      margin-left: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 22px;
+      color: $--primary; 
+    }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    color: $--primary;
+
+    .menu-link {
+      margin-right: 8px;
+    }
+  }
+
+  &-user {
+    color: $--primary;
+
+    a:hover {
+      text-shadow: $--white-2 1px 1px 1px;
+    }
+
+    a:last-child {
+      text-shadow: none;
+      margin-left: 16px;
+    }
+  }
+}
+
+.menu-link {
+  position: relative;
+  opacity: 0.94;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0; //mudar pra 0 depois
+    height: 2px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.55s;
+    opacity: 0;
+    background-color: $--primary;
+  }
+
+  &:hover {
+    opacity: 1;
+    
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}

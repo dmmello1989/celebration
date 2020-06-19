@@ -1,0 +1,77 @@
+@import '../../utils/variables';
+
+.inverse-menu{
+  padding: 32px;
+  background-color: $--primary;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    padding: 0;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: flex-end;
+
+    &-image {
+      width: 30px;
+    }
+
+    &-label {
+      display: block;
+      margin-left: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 22px;
+      color: $--white-2; 
+    }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    color: $--white-2;
+
+    .menu-link {
+      margin-right: 8px;
+    }
+  }
+
+  &-user {
+    color: $--white-2;
+    font-weight: 600;
+    font-size: 20px;
+
+    .inverse-menu-link:last-child {
+      margin-left: 16px;
+    }
+  }
+}
+
+.inverse-menu-link {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.55s;
+    opacity: 0;
+    background-color: $--white-1;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
