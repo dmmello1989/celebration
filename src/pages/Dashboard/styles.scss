@@ -81,8 +81,15 @@ a {
 
 .section {
   &-header {
+    margin: 24px 0 16px;
+
     &-title {
       font-family: 'Open Sans Condensed', sans-serif;
+    }
+
+    &-description {
+      color: $--grey-3;
+      font-size: 14px;
     }
   }
 }
