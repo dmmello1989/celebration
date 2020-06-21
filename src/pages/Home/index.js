@@ -1,5 +1,4 @@
-import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 
 import TopMenu from '../../components/TopMenu';
 import LoginForm from '../../components/LoginForm';
@@ -17,21 +16,21 @@ const Home = () => {
       <TopMenu />
       
       <div className="main-content">
-        <div class="container">
-          <div class="main-center">
-            <div class="main-center-left">
+        <div className="container">
+          <div className="main-center">
+            <div className="main-center-left">
               <h1>Organize os convidados e as comidas da sua festa.</h1>
               <h2>Confirme sua presença e registre sua contribuição.</h2>
             </div>
             
-            <div class="main-center-divider"></div>
+            <div className="main-center-divider"></div>
             
-            <div class="main-center-right">
+            <div className="main-center-right">
               <LoginForm />
             </div>
           </div>
           
-          <div class="main-bottom">
+          <div className="main-bottom">
             <HomeCard
               cardImage={plan}
               cardTitle="Planeje seu Evento"

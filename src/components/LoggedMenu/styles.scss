@@ -47,13 +47,14 @@
 }
 
 .inverse-menu-link {
+  display: inline-block;
   position: relative;
 
   &:after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -12px;
     width: 0;
     height: 2px;
     transition: all 0.2s ease-in-out;

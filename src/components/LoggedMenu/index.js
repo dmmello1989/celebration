@@ -5,20 +5,20 @@ import './styles.scss';
 
 const InverseMenu = () => {
   return (
-    <div class="inverse-menu">
+    <div className="inverse-menu">
       <div className="inverse-menu-container">
-        <div class="inverse-menu-logo">
+        <div className="inverse-menu-logo">
           <Link to="/">
-            <img class="inverse-menu-logo-image" src={logoInverse} alt="Celebration Logo" />
+            <img className="inverse-menu-logo-image" src={logoInverse} alt="Celebration Logo" />
           </Link>
         </div>
-        <nav class="inverse-menu-nav">
-          <Link class="inverse-menu-link" to="/">Criar Evento</Link>
-          <Link class="inverse-menu-link" to="/history">Histórico</Link>
-          <Link class="inverse-menu-link" to="/settings">Configurações</Link>
+        <nav className="inverse-menu-nav">
+          <Link className="inverse-menu-link" to="/">Criar Evento</Link>
+          <Link className="inverse-menu-link" to="/history">Histórico</Link>
+          <Link className="inverse-menu-link" to="/settings">Configurações</Link>
         </nav>
-        <div class="inverse-menu-user">
-          <Link class="inverse-menu-link" to="/">
+        <div className="inverse-menu-user">
+          <Link className="inverse-menu-link" to="/">
             Olá, 
             <strong>Fulano</strong>
           </Link>

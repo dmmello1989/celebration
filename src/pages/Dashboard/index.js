@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import LoggedMenu from '../../components/LoggedMenu';
+import PartyCard from '../../components/PartyCard';
 import './styles.scss';
 
 
@@ -9,7 +10,7 @@ const Dashboard = () => {
 
     <LoggedMenu />
 
-    <div class="container">
+    <div className="container">
 
       <div className="section">
         <div className="section-header">
@@ -17,9 +18,9 @@ const Dashboard = () => {
           <p className="section-header-description">Aqui ficam as festas criadas por você.</p>
         </div>
         <div className="section-content">
-          <div>Сфкв</div>
-          <div>Сфкв</div>
-          <div>Сфкв</div>
+          <PartyCard />
+          <PartyCard />
+          <PartyCard />
         </div>
       </div>
 
@@ -29,13 +30,11 @@ const Dashboard = () => {
           <p className="section-header-description">Aqui ficam as festas nas quais você está convidado.</p>
         </div>
         <div className="section-content">
-          <div>Сфкв</div>
-          <div>Сфкв</div>
-          <div>Сфкв</div>
+          <PartyCard />
+          <PartyCard />
+          <PartyCard />
         </div>
       </div>
-
-
     </div>
   </Fragment>
   )
