@@ -1,12 +1,12 @@
 import React, { Fragment, useState } from 'react';
 import LoggedMenu from '../../components/LoggedMenu';
+import DetailsHeader from '../../components/DetailsHeader';
 import TabMenu from '../../components/TabMenu';
 import anfitriaoMock from '../../utils/mocks/anfitriao-mock';
 import convidadoMock from '../../utils/mocks/convidado-mock';
 import './styles.scss';
 
-
-const Dashboard = () => {
+const Details = (props) => {
   const [anfitriao, setAnfitriao] = useState(anfitriaoMock);
   const [convidado, setConvidado] = useState(convidadoMock);
 
@@ -15,12 +15,10 @@ const Dashboard = () => {
 
     <LoggedMenu />
 
-    <div className="container">
-      <TabMenu anfitriao={anfitriao} convidado={convidado} />
-    </div>
+    <DetailsHeader />
     
   </Fragment>
   )
 }
 
-export default Dashboard;
+export default Details;

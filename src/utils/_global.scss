@@ -52,6 +52,11 @@ a {
   &.full-width {
     width: 100%;
   }
+
+  &:hover {
+    color: $--primary;
+    border: 1px solid $--primary;
+  }
 }
 
 .menu-link {

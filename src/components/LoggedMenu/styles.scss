@@ -64,6 +64,8 @@
   }
 
   &:hover {
+    color: $--white-1;
+    
     &:after {
       width: 100%;
       opacity: 1;

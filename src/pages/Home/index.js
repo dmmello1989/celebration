@@ -43,7 +43,7 @@ const Home = () => {
             />
             <HomeCard
               cardImage={dinner}
-              cardTitle="Comida da festa"
+              cardTitle="Organize a comida"
               cardText="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             />
           </div>
