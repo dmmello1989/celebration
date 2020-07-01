@@ -1,14 +1,13 @@
 import React, { Fragment, useState } from 'react';
 import LoggedMenu from '../../components/LoggedMenu';
 import TabMenu from '../../components/TabMenu';
-import anfitriaoMock from '../../utils/mocks/anfitriao-mock';
-import convidadoMock from '../../utils/mocks/convidado-mock';
+import partyMock from '../../utils/mocks/party-mock';
 import './styles.scss';
 
 
 const Dashboard = () => {
-  const [anfitriao, setAnfitriao] = useState(anfitriaoMock);
-  const [convidado, setConvidado] = useState(convidadoMock);
+  const [anfitriao, setAnfitriao] = useState(partyMock);
+  const [convidado, setConvidado] = useState(partyMock);
 
   return (
     <Fragment>

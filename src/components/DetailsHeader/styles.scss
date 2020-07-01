@@ -3,7 +3,6 @@
 .details-header {
   width: 100%;
   padding: 22px 0;
-  background-color: $--complementary;
     
   &-container {
     display: flex;
@@ -17,7 +16,7 @@
     display: flex;
     flex-direction: column;
     width: 75%;
-    color: $--white-2;
+    color: $--grey-2;
 
     &-title {
       font-size: 34px;
@@ -57,8 +56,19 @@
 
       &:hover {
         background-color: $--primary;
+        border: 1px solid $--primary;
         color: $--white-1;
         transition: all 420ms;
+      }
+
+      &.active {
+        background-color: $--complementary;
+        border: 1px solid $--complementary;
+        color: $--white-1;
+
+        &:hover {
+          color: $--primary;
+        }
       }
     }
   }

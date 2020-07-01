@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import PartyCard from '../PartyCard';
 import './styles.scss';
 
-const TabMenu = (props) => {
+const TabMenuDetails = (props) => {
   const [activeTab, setActiveTab] = useState("anfitriao");
   const [anfitriao, setAnfitriao] = useState([]);
   const [convidado, setConvidado] = useState([]);
@@ -12,7 +12,7 @@ const TabMenu = (props) => {
       <div className="section-content-column" key={key}>
         <PartyCard 
           date={item.date}
-          host={item.host.name}  
+          host={item.host}  
           text={item.text}
           title={item.title}
           location={item.location}
@@ -26,7 +26,7 @@ const TabMenu = (props) => {
       <div className="section-content-column" key={key}>
         <PartyCard 
           date={item.date}
-          host={item.host.name}  
+          host={item.host}  
           text={item.text}
           title={item.title}
           location={item.location}
@@ -92,4 +92,4 @@ const TabMenu = (props) => {
   )
 }
 
-export default TabMenu;
+export default TabMenuDetails;
