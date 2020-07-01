@@ -17,15 +17,32 @@
     box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
   }
 
-  &-name {
-    width: 35%;
-    font-weight: 800;
+  &.is-clickable {
+    cursor: pointer;
   }
 
-  &-select {
+  &-icon {
+    display: flex;
+    margin: 0 auto;
     padding: 8px;
-    border: 1px solid $--grey-4;
     border-radius: 6px;
+    background-color: $--primary;
+  }
 
+  &-buttoninput {
+    width: 110px;
+
+  }
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  input {
+    width: 33.333%;
+    margin-bottom: 0;
   }
 }

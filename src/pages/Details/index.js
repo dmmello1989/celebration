@@ -7,8 +7,6 @@ import DetailsList from '../../components/DetailsList';
 import './styles.scss';
 
 const Details = (props) => {
-  console.log(props)
-
 
   return (
     <Fragment>

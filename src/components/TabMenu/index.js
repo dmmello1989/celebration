@@ -46,20 +46,20 @@ const TabMenu = (props) => {
         <ul className="tab-menu-list">
           <li 
             onClick={() => setActiveTab('anfitriao')}
-            className={activeTab == 'anfitriao' ? 'tab-menu-list-item is-active' : 'tab-menu-list-item'}
+            className={activeTab === 'anfitriao' ? 'tab-menu-list-item is-active' : 'tab-menu-list-item'}
           >
             <span>Anfitrião</span>
           </li>
           <li 
             onClick={() => setActiveTab('convidado')}
-            className={activeTab == 'convidado' ? 'tab-menu-list-item is-active' : 'tab-menu-list-item'}
+            className={activeTab === 'convidado' ? 'tab-menu-list-item is-active' : 'tab-menu-list-item'}
           >
             <span>Convidado</span>
           </li>
         </ul>
       </div>
 
-      <div style={{ display: activeTab != 'anfitriao' ? 'none' : '' }}>
+      <div style={{ display: activeTab !== 'anfitriao' ? 'none' : '' }}>
         <div className="section">
           <div className="section-header">
             <h2 className="section-header-title">Anfitrião</h2>
@@ -73,7 +73,7 @@ const TabMenu = (props) => {
         </div>
       </div>
 
-      <div style={{ display: activeTab != 'convidado' ? 'none' : '' }}>
+      <div style={{ display: activeTab !== 'convidado' ? 'none' : '' }}>
         <div className="section">
           <div className="section-header">
             <h2 className="section-header-title">Convidado</h2>

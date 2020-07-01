@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './styles.scss';
 
 const DetailsHeader = ({ user, party }) => {
   const [presence, setPresence] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
-  console.log(isAdmin)
+  const partyExample = party[0];
 
   const onClickPresence = () => {
     setPresence(!presence);
@@ -21,18 +20,16 @@ const DetailsHeader = ({ user, party }) => {
     isUserAdmin();
   }, null);
 
-
   return (
     <div className="details-header">
       <div className="details-header-container">
         <div className="details-header-left">
-          
           <h2 className="details-header-left-title">
-            {party.title}
+            {partyExample.title}
           </h2>
           <div className="details-header-left-info">
-            <span>Anfitrião: <strong>{party.host.name}</strong></span>
-            <span>Local: <strong>{party.location}</strong></span>
+            <span>Anfitrião: <strong>{partyExample.host.name}</strong></span>
+            <span>Local: <strong>{partyExample.location}</strong></span>
           </div>
         </div>
         <div className="details-header-right">
