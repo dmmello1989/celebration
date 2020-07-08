@@ -15,14 +15,21 @@ const DetailsList = ({
   const [CPF, setCPF] = useState("");
   const [name, setName] = useState("");
   const [guestList, setGuestList] = useState([]);
+  const [foodList, setFoodList] = useState([]);
   const [activeTab, setActiveTab] = useState("convidados");
 
   useEffect(() => {
     setGuestList(party.guests);
-  }, [party.guests])
+  }, [party.guests]);
+
+  useEffect(() => {
+    setFoodList(party.contribuition);
+  }, [])
+  
 
   
   console.log("party no DetailsList: ", party)
+  console.log("foodList no DetailsList: ", foodList)
   // console.log("confirmation no DetailsList: ", confirmation)
 
   return (
@@ -48,7 +55,6 @@ const DetailsList = ({
         </div>
 
         {guestList.map((guest, key) => {
-          console.log("guest no map: ", guest);
           return (
             <GuestListItem 
               key={key} 
@@ -81,12 +87,11 @@ const DetailsList = ({
           <span>Convidado</span>
         </div>
 
-        {guestList.map((guest, key) => {
-          // console.log("guest no map: ", guest);
+        {foodList.map((food, key) => {
           return (
             <FoodListItem 
               key={key} 
-              guest={guest} 
+              food={food} 
               party={party}
               loggedUser={loggedUser} 
               confirmation={confirmation}

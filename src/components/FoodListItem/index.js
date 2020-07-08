@@ -2,27 +2,32 @@ import React from 'react';
 import './styles.scss';
 
 const FoodListItem = ({ 
-  guest, 
+  food, 
   party, 
   loggedUser,
   confirmation,
   onClickConfirmation 
 }) => {
   const userIsHost = loggedUser.id === party.host.id;
-  const userIsGuest = loggedUser.id === guest.id;
-  // console.log("party: ", party)
-  // console.log("guest: ", guest)
-  // console.log("userIsHost: ", userIsHost)
-  // console.log("userIsGuest: ", userIsGuest)
-
-  // console.log("confirmation no FoodListItem: ", confirmation)
+  // console.log("guestId: ", guestId);
+  
+    function getName(id) {
+      const guestName = party.guests.find(guest => guest);
+      console.log(guestName);
+      return guestName;
+    }
+  const guestId = food.guest;
+  const guestName = party.guests.find(getName(guestId));
+  console.log("guestName: ", guestName);
+  console.log("guestId: ", guestId);
 
   return (
     <div className="container">
       <div className="list-item">
-        <span className="list-item-name">{party.contribuition}</span>
+        <span className="list-item-name">{food.item}</span>
+        {/* <span className="list-item-name">{guestName}</span> */}
 
-        {userIsGuest 
+        {/* {userIsGuest 
         ? (
           <label className="checkbox" onClick={onClickConfirmation}>
             <input type="checkbox" name="presence" id="presence"/>
@@ -32,7 +37,7 @@ const FoodListItem = ({
           <span>Confirmado</span>
           ) : (
             <span>Não confirmado</span>
-          )}
+          )} */}
 
 
       </div>
