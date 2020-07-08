@@ -3,57 +3,141 @@ const partyMock = [
     id: '1',
     date: '10/01/2020',
     host: {
-      id: '123',
-      name: 'Zeca'
+      id: '04',
+      name: 'Queiroz'
     },
     text: 'Não perca essa maravilhosa festaaa',
-    title: 'Festa de Aniversário do Zeca',
-    location: 'Rua Felipe Andrade, 203'
+    title: 'Festa da Laranja',
+    location: 'Rua Felipe Andrade, 203',
+    guests: [
+      {
+        id: '01',
+        name: 'Flávio',
+        confirmation: true
+      },
+      {
+        id: '02',
+        name: 'Carlos',
+        confirmation: true
+      },
+      {
+        id: '03',
+        name: 'Eduardo',
+        confirmation: false
+      }
+    ],
+    contribuition: [
+      {
+        item: 'Laranja',
+        guest: '01'
+      },
+      {
+        item: 'Refrigerante',
+        guest: '02'
+      },
+      {
+        item: 'Bolo',
+        guest: '03'
+      },
+    ]
   },
   {
     id: '2',
-    date: '24/03/2020',
+    date: '10/01/2020',
     host: {
-      id: '456',
-      name: 'Djow Festas'
+      id: '01',
+      name: 'Flávio'
     },
-    text: 'festa no cemitério',
-    title: 'Festa Gótica do Djow',
-    location: 'Rua Felipe Andrade, 203'
+    text: 'Não perca essa maravilhosa festaaa',
+    title: 'Festival de Chocolate',
+    location: 'Rua Felipe Andrade, 203',
+    guests: [
+      {
+        id: '04',
+        name: 'Queiroz',
+        confirmation: true
+      },
+      {
+        id: '02',
+        name: 'Carlos',
+        confirmation: true
+      },
+      {
+        id: '03',
+        name: 'Eduardo',
+        confirmation: true
+      }
+    ],
+    contribuition: [
+      {
+        item: 'Laranja',
+        guest: '04'
+      },
+      {
+        item: 'Refrigerante',
+        guest: '02'
+      },
+      {
+        item: 'Bolo',
+        guest: '03'
+      },
+    ]
   },
   {
     id: '3',
     date: '10/01/2020',
     host: {
-      id: '456',
-      name: 'Djow Festas'
+      id: '05',
+      name: 'Jair'
     },
-    text: 'Eu não vim pra me curvar',
-    title: 'Cabeça de Gelo Party',
-    location: 'Rua Felipe Andrade, 203'
+    text: '54 dias já',
+    title: 'Maratona Ministério Freestyle',
+    location: 'Rua Felipe Andrade, 203',
+    guests: [
+      {
+        id: '01',
+        name: 'Flávio'
+      },
+      {
+        id: '02',
+        name: 'Carlos'
+      },
+      {
+        id: '03',
+        name: 'Eduardo'
+      }
+    ]
   },
   {
     id: '4',
     date: '10/01/2020',
     host: {
-      id: '789',
-      name: 'Carlinhos'
+      id: '05',
+      name: 'Jair'
     },
-    text: 'Confraternização do pessoal do escritório',
-    title: 'Despedida do Carlinhos',
-    location: 'Rua Felipe Andrade, 203'
+    text: 'Festa no cemitério',
+    title: 'Bacanal do "E daí?"',
+    location: 'Cemitério Jardim da Paz',
+    guests: [
+      {
+        id: '01',
+        name: 'Flávio'
+      },
+      {
+        id: '03',
+        name: 'Eduardo'
+      },
+      {
+        id: '04',
+        name: 'Queiroz'
+      },
+      {
+        id: '02',
+        name: 'Carlos'
+      },
+    ]
   },
-  {
-    id: '5',
-    date: '10/01/2020',
-    host: {
-      id: '789',
-      name: 'Carlinhos'
-    },
-    text: 'Não perca essa maravilhosa festaaa irraa',
-    title: 'Festa do Zeca',
-    location: 'Rua Felipe Andrade, 203'
-  },
+
 ]
 
 export default partyMock;

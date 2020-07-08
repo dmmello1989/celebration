@@ -1,11 +1,19 @@
 const anfitriao = [
   {
-    id: '1',
+    id: 1,
     date: '10/01/2020',
-    host: 'Zeca Festas',
+    host: {
+      id: '123',
+      name: 'Zeca'
+    },
     text: 'Não perca essa maravilhosa festaaa',
-    title: 'Festa do Zeca',
-    location: 'Rua Felipe Andrade, 203'
+    title: 'Festa de Aniversário do Zeca',
+    location: 'Rua Felipe Andrade, 203',
+    guests: [
+      {
+        id: '123'
+      }
+    ]
   },
   {
     id: '2',

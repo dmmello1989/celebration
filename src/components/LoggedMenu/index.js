@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import loggedUser from '../../utils/mocks/loggedUser-mock';
 import logoInverse from "../../assets/logo-inverse.svg";
 import './styles.scss';
 
@@ -20,7 +21,7 @@ const InverseMenu = () => {
         <div className="inverse-menu-user">
           <Link className="inverse-menu-link" to="/">
             Olá, 
-            <strong>Fulano</strong>
+            <strong>{loggedUser.name}</strong>
           </Link>
         </div>
       </div>

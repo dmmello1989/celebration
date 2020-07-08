@@ -1,11 +1,10 @@
 @import '../../utils/variables';
-// @import '../../utils/global';
 
 .tab-menu {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin-top: 24px;
+  margin: 0 0 32px;
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
@@ -32,41 +31,6 @@
     &-item.is-active {
       border-bottom: 1px solid $--primary;
       color: $--primary
-    }
-  }
-}
-
-.section {
-  margin-bottom: 42px;
-
-  &-header {
-    margin: 24px 0 32px;
-
-    &-title {
-      font-family: 'Open Sans Condensed', sans-serif;
-    }
-
-    &-description {
-      color: $--grey-3;
-      font-size: 14px;
-    }
-  }
-
-  &-content {
-    display: flex;
-    justify-content: space-between;
-
-    &-columns {
-      display: flex;
-      flex-wrap: wrap;
-      margin: -.75rem;
-    }
-
-    &-column {
-      display: block;
-      padding: .75rem;
-      flex: none;
-      width: 33.33333%;
     }
   }
 }

@@ -1,7 +1,7 @@
 const userMock = [
   {
-    id: '123',
-    name: 'Zeca',
+    id: '01',
+    name: 'Flávio',
     cpf: '123456789',
     partyHost: [
       '1'
@@ -11,8 +11,8 @@ const userMock = [
     ]
   },
   {
-    id: '456',
-    name: 'Djow Festas',
+    id: '02',
+    name: 'Carlos',
     cpf: '456789123',
     partyHost: [
       '2', '3'
@@ -22,8 +22,8 @@ const userMock = [
     ]
   },
   {
-    id: '789',
-    name: 'Carlinhos',
+    id: '03',
+    name: 'Eduardo',
     cpf: '789123456',
     partyHost: [
       '4', '5'
@@ -32,6 +32,29 @@ const userMock = [
       '1', '2', '3'
     ]
   },
+  {
+    id: '04',
+    name: 'Queiroz',
+    cpf: '1325151',
+    partyHost: [
+      '1'
+    ],
+    partyGuest: [
+      '2'
+    ]
+  },
+  {
+    id: '05',
+    name: 'Jair',
+    cpf: '1325151',
+    partyHost: [
+      '4'
+    ],
+    partyGuest: [
+      '2'
+    ]
+  },
+
 ]
 
 export default userMock;

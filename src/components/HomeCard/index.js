@@ -4,9 +4,9 @@ import './styles.scss';
 const HomeCard = (props) => {
   const { cardImage, cardTitle, cardText } = props;
   return (
-    <div class="card">
+    <div className="card">
       <img src={cardImage} alt={cardTitle} />
-      <div class="card-text">
+      <div className="card-text">
         <span>{cardTitle}</span>
         <p>{cardText}</p>
       </div>

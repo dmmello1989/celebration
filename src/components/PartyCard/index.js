@@ -25,7 +25,7 @@ const PartyCard = (props) => {
         <span>Local: <strong>{props.location}</strong></span>
         <span>Dia: <strong>{props.date} - 19h</strong></span>
         <p className="party-card-text-description">{props.text}</p>
-        <Link to="/details">
+        <Link to={`/details/${props.id}`}>
           <button className="button full-width">Ver Detalhes</button>
         </Link>
       </div>
