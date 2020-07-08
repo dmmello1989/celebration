@@ -12,26 +12,16 @@ const Dashboard = () => {
   const [activeTab, setActiveTab] = useState("anfitriao");
 
   const partyHost = partyMock.filter(party => {
-    console.log("party no [partyHost]: ", party)
     return party.host.id === loggedUser.id;
   })
-  console.log("partyHost: ", partyHost)
-
-  
   
   const partyGuest = partyMock.filter(party => {
-    console.log("party no [partyGuest]: ", party);
     const guestArr = party.guests.filter(id => {
-      console.log("id no [partyGuest]: ", id)
       return id.id  === loggedUser.id;
     });
-    console.log("guestArr: ", guestArr);
     return guestArr; 
   })
-  console.log("partyGuest: ", partyGuest);
 
-
-  
   useEffect(() => {
     setHost(partyHost)
   }, partyHost);
@@ -39,12 +29,6 @@ const Dashboard = () => {
   useEffect(() => {
     setGuest(partyGuest)
   }, partyGuest);
-  
-  console.log("host: ", host)
-  console.log("guest: ", guest)
-
-
-
 
   return (
     <Fragment>
@@ -113,8 +97,6 @@ const Dashboard = () => {
         </div>
       </div>
     </div>
-
-    
   </Fragment>
   )
 }

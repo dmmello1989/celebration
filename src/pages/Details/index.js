@@ -9,7 +9,6 @@ const Details = ({ party }) => {
   const [confirmation, setConfirmation] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
 
-
   const onClickConfirmation = () => {
     setConfirmation(!confirmation);
   }
