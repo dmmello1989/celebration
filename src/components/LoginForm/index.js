@@ -6,7 +6,7 @@ const LoginForm = () => {
   return (
     <div className="login-form">
       <span className="login-form-title">Faça seu login</span>
-      <input type="email" name="email" id="email" placeholder="E-mail" />
+      <input type="text" name="name" id="name" placeholder="Nome" />
       <input type="text" placeholder="CPF" />
       <Link className="button" to="/dashboard">
         <span>Login</span>
