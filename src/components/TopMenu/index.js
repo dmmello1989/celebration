@@ -5,26 +5,22 @@ import './styles.scss';
 
 const TopMenu = () => {
   return (
-    <menu class="menu">
-      <div class="menu container">
-        <Link class="menu-item" to="/">
-          <div class="menu-logo">
-            <img class="menu-logo-image" src={logo} alt="Celebration Logo" />
-            <span class="menu-logo-label">Celebration</span>
-          </div>
-        </Link>
-        <nav class="menu-nav">
-          <Link class="menu-link" to="/">Home</Link>
-          <Link class="menu-link" to="/">Criar Evento</Link>
-          <Link class="menu-link" to="/">Ver Evento</Link>
-          <Link class="menu-link" to="/">Lista de Convidados</Link>
+    <div className="menu">
+      <div className="menu-container">
+        <div className="menu-logo">
+          <Link to="/dashboard">
+            <img className="menu-logo-image" src={logo} alt="Celebration Logo" />
+          </Link>
+        </div>
+        <nav className="menu-nav">
+          <Link className="menu-link" to="/about">Sobre</Link>
+          <Link className="menu-link" to="/coming-soon" target="_blank">Em Breve</Link>
         </nav>
-        <div class="menu-user">
-          <Link class="menu-link" to="/">Cadastrar</Link>
-          <Link to="/" class="button">Entrar</Link>
+        <div className="menu-user">
+          <Link className="menu-user-button button" to="/register">Cadastrar</Link>
         </div>
       </div>
-    </menu>
+    </div>
   )
 }
 

@@ -4,12 +4,14 @@ import './styles.scss';
 
 const LoginForm = () => {
   return (
-    <div class="login-form">
-      <span class="login-form-title">Faça seu login</span>
+    <div className="login-form">
+      <span className="login-form-title">Faça seu login</span>
       <input type="email" name="email" id="email" placeholder="E-mail" />
       <input type="text" placeholder="CPF" />
-      <button class="button">Login</button>
-      <span class="login-form-register">Não tem uma conta? <Link to="#">Cadastre-se aqui</Link>.</span>
+      <Link className="button" to="/dashboard">
+        <span>Login</span>
+      </Link>
+      <span className="login-form-register">Não tem uma conta? <Link to="#">Cadastre-se aqui</Link>.</span>
     </div>
   )
 }
