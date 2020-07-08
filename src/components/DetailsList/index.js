@@ -25,9 +25,7 @@ const DetailsList = ({
   useEffect(() => {
     setFoodList(party.contribuition);
   }, [])
-  
 
-  
   console.log("party no DetailsList: ", party)
   console.log("foodList no DetailsList: ", foodList)
   // console.log("confirmation no DetailsList: ", confirmation)

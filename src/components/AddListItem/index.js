@@ -35,7 +35,8 @@ const AddListItem = ({
 
   const handleFood = (e) => {
     let food = e.target.value;
-    return setFood([...food, food])
+    console.log("food: ", food)
+    // return setFood([...food, food])
   }
 
   const createContribuition = (e) => {

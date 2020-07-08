@@ -17,7 +17,7 @@ const FoodListItem = ({
       return guestName;
     }
   const guestId = food.guest;
-  const guestName = party.guests.find(getName(guestId));
+  const guestName = party.guests.find(getName);
   console.log("guestName: ", guestName);
   console.log("guestId: ", guestId);
 

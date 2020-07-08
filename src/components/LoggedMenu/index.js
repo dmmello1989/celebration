@@ -9,7 +9,7 @@ const InverseMenu = () => {
     <div className="inverse-menu">
       <div className="inverse-menu-container">
         <div className="inverse-menu-logo">
-          <Link to="/">
+          <Link to="/dashboard">
             <img className="inverse-menu-logo-image" src={logoInverse} alt="Celebration Logo" />
           </Link>
         </div>

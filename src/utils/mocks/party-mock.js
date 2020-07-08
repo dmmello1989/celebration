@@ -106,6 +106,20 @@ const partyMock = [
         id: '03',
         name: 'Eduardo'
       }
+    ],
+    contribuition: [
+      {
+        item: 'Laranja',
+        guest: '01'
+      },
+      {
+        item: 'Refrigerante',
+        guest: '02'
+      },
+      {
+        item: 'Bolo',
+        guest: '03'
+      },
     ]
   },
   {
@@ -134,6 +148,20 @@ const partyMock = [
       {
         id: '02',
         name: 'Carlos'
+      },
+    ], 
+    contribuition: [
+      {
+        item: 'Laranja',
+        guest: '01'
+      },
+      {
+        item: 'Refrigerante',
+        guest: '02'
+      },
+      {
+        item: 'Bolo',
+        guest: '03'
       },
     ]
   },

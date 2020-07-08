@@ -8,7 +8,9 @@ const LoginForm = () => {
       <span className="login-form-title">Faça seu login</span>
       <input type="email" name="email" id="email" placeholder="E-mail" />
       <input type="text" placeholder="CPF" />
-      <button className="button">Login</button>
+      <Link className="button" to="/dashboard">
+        <span>Login</span>
+      </Link>
       <span className="login-form-register">Não tem uma conta? <Link to="#">Cadastre-se aqui</Link>.</span>
     </div>
   )
