@@ -24,11 +24,11 @@ const Dashboard = () => {
 
   useEffect(() => {
     setHost(partyHost)
-  }, partyHost);
+  }, [partyHost]);
   
   useEffect(() => {
     setGuest(partyGuest)
-  }, partyGuest);
+  }, [partyGuest]);
 
   return (
     <Fragment>
