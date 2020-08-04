@@ -26,10 +26,6 @@ const DetailsList = ({
     setFoodList(party.contribuition);
   }, [])
 
-  console.log("party no DetailsList: ", party)
-  console.log("foodList no DetailsList: ", foodList)
-  // console.log("confirmation no DetailsList: ", confirmation)
-
   return (
     <div className="container">
       {isAdmin && (
